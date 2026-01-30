@@ -144,23 +144,24 @@ function render(){
       items
     };
 
-    const blob=new Blob([JSON.stringify(receipt,null,2)],{type:"application/json"});
-    const a=document.createElement("a");
-    a.href=URL.createObjectURL(blob);
-    a.download="newfoundlug_bulk_test_receipt.json";
-    a.click();
+    (async () => {
+  try {
+    const resp = await fetch(data.meta.submitEndpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(receipt)
+    });
 
-   const resp = await fetch(data.meta.submitEndpoint, {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify(receipt)
-});
-const out = await resp.json();
-msg.textContent = out.ok
-  ? `Submitted! Rows added: ${out.rowsAdded}`
-  : `Error: ${out.error}`;
-;
-  };
+    const out = await resp.json();
+
+    msg.textContent = out.ok
+      ? `Submitted! Rows added: ${out.rowsAdded}`
+      : `Error: ${out.error}`;
+  } catch (err) {
+    msg.textContent = "Submit failed — check script permissions.";
+  }
+})();
+
   calc();
 }
 
