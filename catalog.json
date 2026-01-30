@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "exchangeRateEurToCad": 1.6186,
+    "exchangeRateSource": "ECB reference rate (fixed for Jan 29, 2026)",
+    "shippingRate": 0.15,
+    "spendLimitEur": 235.0,
+    "spendLimitCadTotal": 437.42664999999994,
+    "paymentEmails": [
+      "newfoundlug@gmail.com",
+      "justin@newfoundlug.ca"
+    ],
+    "testAllowedEmail": "justin@newfoundlug.ca"
+  },
+  "items": [
+    {
+      "elementId": "4618526",
+      "designId": "91405",
+      "name": "Plate 16 x 16",
+      "color": "White",
+      "bricklinkColorId": 1,
+      "priceEur": 1.35,
+      "qtyStep": 1,
+      "imageUrl": "https://img.bricklink.com/ItemImage/PN/1/91405.png",
+      "priceCadBase": 2.1851,
+      "priceCadWithShipping": 2.5129
+    },
+    {
+      "elementId": "4211394",
+      "designId": "3010",
+      "name": "Brick 1 x 4",
+      "color": "Light Bluish Gray",
+      "bricklinkColorId": 86,
+      "priceEur": 0.12,
+      "qtyStep": 25,
+      "imageUrl": "https://img.bricklink.com/ItemImage/PN/86/3010.png",
+      "priceCadBase": 0.1942,
+      "priceCadWithShipping": 0.2233
+    },
+    {
+      "elementId": "6290456",
+      "designId": "37762",
+      "name": "Candle (Utensil)",
+      "color": "Black",
+      "bricklinkColorId": 11,
+      "priceEur": 0.09,
+      "qtyStep": 25,
+      "imageUrl": "https://img.bricklink.com/ItemImage/PN/11/37762.png",
+      "priceCadBase": 0.1457,
+      "priceCadWithShipping": 0.1676
+    },
+    {
+      "elementId": "6250591",
+      "designId": "24246",
+      "name": "Tile, Round 1 x 2 Half Circle Extended",
+      "color": "White",
+      "bricklinkColorId": 1,
+      "priceEur": 0.14,
+      "qtyStep": 25,
+      "imageUrl": "https://img.bricklink.com/ItemImage/PN/1/24246.png",
+      "priceCadBase": 0.2266,
+      "priceCadWithShipping": 0.2606
+    },
+    {
+      "elementId": "302201",
+      "designId": "3022",
+      "name": "Plate 2 x 2",
+      "color": "White",
+      "bricklinkColorId": 1,
+      "priceEur": 0.07,
+      "qtyStep": 25,
+      "imageUrl": "https://img.bricklink.com/ItemImage/PN/1/3022.png",
+      "priceCadBase": 0.1133,
+      "priceCadWithShipping": 0.1303
+    }
+  ]
+}

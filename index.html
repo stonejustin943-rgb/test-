@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NewfoundLUG Bulk 2026 — Test (5 parts)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="wrap">
+    <div class="title">
+      <h1>NewfoundLUG Bulk 2026 — Test (5 parts)</h1>
+      <p class="muted">
+        Fixed FX rate: <b>1 EUR = 1.6186 CAD</b> (ECB reference rate for Jan 29, 2026) •
+        Shipping: <b>15%</b> •
+        Spend limit: <b>235 EUR</b> (= <span id="limitCad"></span> CAD total incl. shipping)
+      </p>
+      <p class="muted">
+        Pay by e-transfer to: <b>newfoundlug@gmail.com</b> or <b>justin@newfoundlug.ca</b>
+        <span class="pill">TEST: submissions allowed only from <b>justin@newfoundlug.ca</b></span>
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap grid">
+    <section class="card">
+      <h2>Your info</h2>
+      <label>
+        Name
+        <input id="name" placeholder="Justin Stone" />
+      </label>
+      <label>
+        Email (test)
+        <input id="email" placeholder="justin@newfoundlug.ca" />
+      </label>
+
+      <div class="divider"></div>
+
+      <h2>Cart</h2>
+      <div class="totals">
+        <div><span class="muted">Subtotal (CAD)</span><span id="subtotal" class="money"></span></div>
+        <div><span class="muted">Shipping (15%)</span><span id="shipping" class="money"></span></div>
+        <div class="big"><span>Total (CAD)</span><span id="total" class="money"></span></div>
+        <div><span class="muted">Remaining</span><span id="remaining" class="money"></span></div>
+      </div>
+
+      <p id="limitWarning" class="warning hidden">You’re at/over the spend limit. Remove items to continue.</p>
+
+      <div class="actions">
+        <button id="exportCsv">Export order CSV</button>
+        <button id="clearCart" class="ghost">Clear</button>
+      </div>
+
+      <div class="divider"></div>
+
+      <h2>Test submit</h2>
+      <p class="muted">This test build doesn’t send email automatically. “Submit” validates your email and downloads a JSON receipt you can share.</p>
+      <button id="submitOrder" class="primary">Submit (test)</button>
+      <p id="submitMsg" class="muted"></p>
+    </section>
+
+    <section class="catalog">
+      <div class="catalogHeader">
+        <h2>Catalog</h2>
+        <p class="muted">Rule: only items priced <b>1.35 EUR</b> can be ordered in quantity <b>1</b>. All others are <b>25</b> increments.</p>
+      </div>
+      <div id="items" class="items"></div>
+    </section>
+  </main>
+
+  <footer class="wrap foot muted">
+    <div>NewfoundLUG • Test build • 5 parts</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
