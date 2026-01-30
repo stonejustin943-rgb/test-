@@ -1,10 +1,10 @@
 {
   "meta": {
-    "submitEndpoint": "https://script.google.com/macros/s/AKfycbxD6ABtcWmH3K32YQMKs3g1EKUHdIVMcMCHLVQF_oymr2Adif-6pvKAGUBHmwdsONOEtw/exec",
-    "exchangeRateEurToCad": 1.6186,
-    "exchangeRateSource": "ECB reference rate (fixed for Jan 29, 2026)",
-    "shippingRate": 0.15,
-    "spendLimitEur": 235.0,
+  "exchangeRateEurToCad": 1.6186,
+  "shippingRate": 0.15,
+  "spendLimitEur": 235,
+  "submitEndpoint": "https://script.google.com/macros/s/AKfycbxD6ABtcWmH3K32YQMKs3g1EKUHdIVMcMCHLVQF_oymr2Adif-6pvKAGUBHmwdsONOEtw/exec"
+},
     "spendLimitCadTotal": 437.42664999999994,
     "paymentEmails": [
       "newfoundlug@gmail.com"
