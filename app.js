@@ -150,7 +150,16 @@ function render(){
     a.download="newfoundlug_bulk_test_receipt.json";
     a.click();
 
-    msg.textContent="Receipt downloaded. (Test mode: no server submission yet.)";
+   const resp = await fetch(data.meta.submitEndpoint, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(receipt)
+});
+const out = await resp.json();
+msg.textContent = out.ok
+  ? `Submitted! Rows added: ${out.rowsAdded}`
+  : `Error: ${out.error}`;
+;
   };
   calc();
 }
